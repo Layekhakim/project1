@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+
+    <form method='POST' action="" >
+        
+        {{ form.hidden_tag() }}
+
+        {{ form.assignment_subject.label }} {{ form.assignment_subject }} 
+
+       <br>
+       
+       {{ form.assignment_grade.label }} {{ form.assignment_grade }} 
+
+       <br>
+
+        {{ form.submit }}
+
+    </form>
+{% endblock body_content %}
+

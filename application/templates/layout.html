@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Assignment List</title>
+</head>
+<body>
+ <h1>Welcome Students</h1> </a>
+ <form action="{{url_for('home')}}">
+    <input type="submit" value="Home" />
+</form>
+
+    <h2>{{subheading}}</h2>
+
+    {% block body_content %}
+    {% endblock body_content %}
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+    
+    <h4> Students List </h4>
+
+    {% for students in all_students %}
+        <a href="{{url_for('assignmentlist', studentID=students.id)}}"> {{ students.first_name }}  {{ students.last_name }} </a>
+    
+        <br>
+    
+    {% endfor %}
+
+    <br><br>
+
+    <form action= "{{url_for('create') }}" > 
+        <input type = submit value="Create Student">
+    </form>
+
+    
+
+
+
+{% endblock body_content %}

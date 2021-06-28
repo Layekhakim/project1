@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+    <form method='POST' action="" >
+
+        {{ form.hidden_tag()}}
+
+        {{form.assignment_subject.label}} {{form.assignment_subject}}
+        <br>
+        {% if form.assignment_subject.errors %}
+            {% for error in form.assignment_subject.errors %}
+                {{ error }}<br>
+            {% endfor %}
+        {% endif %}
+
+        {{ form.assignment_grade.label }} {{ form.assignment_grade }}
+        <br>
+
+        {% if form.assignment_grade.errors %}
+            {% for error in form.assignment_grade.errors %}
+
+            {{ error }} <br>
+                {% endfor %}
+            {% endif %}
+
+            {{ form.submit }}
+
+
+    </form>
+{% endblock body_content %}

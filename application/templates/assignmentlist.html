@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+
+    {% for assignment in all_assignments %}
+        {{ assignment.assignment_name }} - {{ assignment.assignment_grade }}
+        
+        <div style="display:inline">
+            <form action= "{{url_for('update', studentID=studentID, assignmentID=assignment.id)}}" > 
+                <input type = submit value="Update">
+            </form>
+        
+            <form action= "{{url_for('delete', studentID=studentID, assignmentID=assignment.id)}}" > 
+                <input type = submit value="Delete">
+            </form>
+        </div>
+        <br>
+    {% endfor %}
+
+    
+    <form action= "{{ url_for('addassignment', studentID=studentID)}}" > 
+        <input type = submit value="Add Assignment">
+    </form>
+  
+{% endblock body_content %}
