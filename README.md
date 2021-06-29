@@ -171,4 +171,4 @@ Throughout the course of the project there are many improvements that can be mad
 Layek Hakim
 
 ### Acknowledgements
-Luke Benson - In the 2 weeks of Luke teaching, I have made huge progress.
+Luke Benson 
