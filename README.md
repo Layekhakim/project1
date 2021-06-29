@@ -163,9 +163,7 @@ Throughout the course of the project there are many improvements that can be mad
 * To improve the front end design of the web application
 * Do integration testing and better Unit Testing which will help the developer even more to find any mistakes
 * Push it up to the CI server would save a lot of time for the developer for future improvements
-* My images do not display on this readme file.
-* I could not get the app to run on Jenkins, which was a huge dissapointment
-* Complete some labs on QA Learning
+
 
 ### Author
 Layek Hakim
